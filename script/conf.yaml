@@ -1,0 +1,31 @@
+app:
+  isProd: false
+  logger: "fmt" # std|fmt|file
+cdn: "https://cdn.domamin.cn"
+wechat: #微信小程序
+  appid: "wx1c0dxxxxxx45dec0"
+  secret: "5975a95xxxxxxxxxxxxxxxxx0e67c15"
+robot:
+  dingTalk: "https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxxxxxx"
+  wechatWork: "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxxxxxxxxxx"
+mysql:
+  address: "127.0.0.1:3306"
+  username: "root"
+  password: "root.pwd"
+  database: "go_project"
+  maxOpen: 50
+  maxIdle: 1
+  traceLog: true
+redis:
+  address: "127.0.0.1:6379"
+  username: "" # redis6.0以上使用
+  password: ""
+  db: 0
+  poolSize: 50
+  minIdle: 0
+#  cert: |
+#  key: |
+#  ca: |
+nsq:
+  producer: "127.0.0.1:4150"
+  consumer: "127.0.0.1:4161"

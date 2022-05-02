@@ -1,0 +1,29 @@
+app:
+  mode: "debug" # debug|test|release
+  logger: "fmt" # std|fmt|file
+handler:
+  cdn: "https://cdn.domamin.cn/" #末尾带上/，路径前缀不带/
+  wechat: #微信小程序
+    appid: "wx1c0dxxxxxx45dec0"
+    secret: "5975a95xxxxxxxxxxxxxxxxx0e67c15"
+service:
+  mysql:
+    address: "127.0.0.1:3306"
+    username: "root"
+    password: "root.pwd"
+    database: "go_project"
+    maxOpen: 50
+    maxIdle: 5
+    traceLog: true
+  redis:
+    address: "127.0.0.1:6379"
+    username: "" # redis6.0以上使用
+    password: ""
+    db: 0
+    poolSize: 50
+    minIdle: 5
+#    cert: |
+#    key: |
+#    ca: |
+  nsq:
+    producer: "127.0.0.1:4150"
